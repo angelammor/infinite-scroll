@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 html {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    min-height: 100vh;
+    font-family: 'Shadows Into Light', sans-serif;
+    background: #F2EFE9;
+}
+
+h1 {
+    color: #472836;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color:#AA6373;
 }
