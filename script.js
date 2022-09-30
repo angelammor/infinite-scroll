@@ -3,6 +3,7 @@ const loader = document.getElementById('loader');
 
 let photosArray = [];
 
+
 // Unsplash API
 const count = 10;
 const query = 'autumn';
@@ -49,6 +50,14 @@ async function getPhotos() {
         // Catch Error Here
     }
 }
+
+// Check to see if scrolling near bottom of page, Load More Photos
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+        getPhotos();
+        console.log('load more');
+    }
+});
 
 // On Load
 getPhotos();
