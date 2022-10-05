@@ -8,7 +8,7 @@ let photosArray = [];
 
 
 // Unsplash API
-const count = 30;
+const count = 5;
 const query = 'autumn';
 const apiKey = 'kYD2J5iM86odFzWHDCrwKKAHn23v-oyG-t27Rs4Ikd4';
 const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
@@ -19,6 +19,7 @@ function imageLoaded() {
     if (imagesLoaded === totalImages) {
         ready = true;
         loader.hidden = true;
+        count = 30
     }
 }
 
